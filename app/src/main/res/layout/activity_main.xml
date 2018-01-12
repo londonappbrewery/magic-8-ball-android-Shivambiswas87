@@ -5,7 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
+    android:background="@android:color/holo_blue_dark"
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
@@ -14,19 +14,21 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/white">
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/textViewtop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:background="@color/colorPrimary"
+            android:layout_marginTop="54dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
             android:text="@string/textviewtop"
             android:textColor="@android:color/background_light"
-            android:textSize="22sp"
-            android:textStyle="italic" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/askButton"
@@ -34,19 +36,19 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="72dp"
-            android:background="@color/colorPrimary"
+            android:layout_marginBottom="53dp"
+            android:background="@android:color/darker_gray"
             android:text="@string/askButton"
-            android:textColor="@android:color/background_light" />
+            android:textColor="@android:color/black" />
 
         <ImageView
             android:id="@+id/image_eightBall"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_below="@+id/textViewtop"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="false"
-            android:layout_marginTop="71dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/todo"
             android:src="@drawable/ball1" />
 
     </RelativeLayout>
